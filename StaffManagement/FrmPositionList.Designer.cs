@@ -1,6 +1,6 @@
 ﻿namespace StaffManagement
 {
-    partial class FrmDepartmentList
+    partial class FrmPositionList
     {
         /// <summary>
         /// Required designer variable.
@@ -46,7 +46,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(623, 336);
+            this.dataGridView1.Size = new System.Drawing.Size(687, 344);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel1
@@ -56,15 +56,15 @@
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.btnNew);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 342);
+            this.panel1.Location = new System.Drawing.Point(0, 350);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(623, 108);
+            this.panel1.Size = new System.Drawing.Size(687, 100);
             this.panel1.TabIndex = 1;
             // 
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(29, 32);
+            this.btnClose.Location = new System.Drawing.Point(42, 26);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(114, 46);
             this.btnClose.TabIndex = 0;
@@ -75,7 +75,7 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(473, 32);
+            this.btnDelete.Location = new System.Drawing.Point(486, 26);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(114, 46);
             this.btnDelete.TabIndex = 3;
@@ -85,7 +85,7 @@
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(316, 32);
+            this.btnUpdate.Location = new System.Drawing.Point(329, 26);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(114, 46);
             this.btnUpdate.TabIndex = 2;
@@ -96,7 +96,7 @@
             // btnNew
             // 
             this.btnNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNew.Location = new System.Drawing.Point(170, 32);
+            this.btnNew.Location = new System.Drawing.Point(183, 26);
             this.btnNew.Name = "btnNew";
             this.btnNew.Size = new System.Drawing.Size(114, 46);
             this.btnNew.TabIndex = 1;
@@ -104,16 +104,16 @@
             this.btnNew.UseVisualStyleBackColor = true;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
-            // FrmDepartmentList
+            // FrmPositionList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 450);
+            this.ClientSize = new System.Drawing.Size(687, 450);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "FrmDepartmentList";
+            this.Name = "FrmPositionList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Department List";
+            this.Text = "Position List";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -124,9 +124,9 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnNew;
     }
 }

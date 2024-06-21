@@ -32,7 +32,7 @@
             this.txtUserNo = new System.Windows.Forms.TextBox();
             this.bbb = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.btnEnter = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -40,17 +40,18 @@
             // 
             this.aaa.AutoSize = true;
             this.aaa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aaa.Location = new System.Drawing.Point(106, 105);
+            this.aaa.Location = new System.Drawing.Point(106, 109);
             this.aaa.Name = "aaa";
-            this.aaa.Size = new System.Drawing.Size(132, 29);
+            this.aaa.Size = new System.Drawing.Size(102, 29);
             this.aaa.TabIndex = 0;
-            this.aaa.Text = "Username";
+            this.aaa.Text = "UserNo";
             // 
             // txtUserNo
             // 
+            this.txtUserNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserNo.Location = new System.Drawing.Point(250, 109);
             this.txtUserNo.Name = "txtUserNo";
-            this.txtUserNo.Size = new System.Drawing.Size(194, 26);
+            this.txtUserNo.Size = new System.Drawing.Size(194, 35);
             this.txtUserNo.TabIndex = 1;
             this.txtUserNo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUserNo_KeyPress);
             // 
@@ -66,20 +67,22 @@
             // 
             // txtPassword
             // 
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(250, 171);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(194, 26);
+            this.txtPassword.Size = new System.Drawing.Size(194, 35);
             this.txtPassword.TabIndex = 2;
             // 
-            // btnEnter
+            // btnLogin
             // 
-            this.btnEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnter.Location = new System.Drawing.Point(296, 250);
-            this.btnEnter.Name = "btnEnter";
-            this.btnEnter.Size = new System.Drawing.Size(148, 50);
-            this.btnEnter.TabIndex = 4;
-            this.btnEnter.Text = "Enter";
-            this.btnEnter.UseVisualStyleBackColor = true;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(296, 250);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(148, 50);
+            this.btnLogin.TabIndex = 4;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnExit
             // 
@@ -98,7 +101,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(565, 416);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnEnter);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.bbb);
             this.Controls.Add(this.txtUserNo);
@@ -117,7 +120,7 @@
         private System.Windows.Forms.TextBox txtUserNo;
         private System.Windows.Forms.Label bbb;
         private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Button btnEnter;
+        private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnExit;
     }
 }

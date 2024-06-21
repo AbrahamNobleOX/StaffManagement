@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace StaffManagement
 {
-    public partial class FrmDepartmentList : Form
+    public partial class FrmEmployeeList : Form
     {
-        public FrmDepartmentList()
+        public FrmEmployeeList()
         {
             InitializeComponent();
         }
@@ -22,9 +22,14 @@ namespace StaffManagement
             this.Close();
         }
 
+        private void txtUserNo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = General.isNumber(e);
+        }
+
         private void btnNew_Click(object sender, EventArgs e)
         {
-            FrmDepartment frm = new FrmDepartment();
+            FrmEmployee frm = new FrmEmployee();
             this.Hide();
             frm.ShowDialog();
             this.Visible = true;
@@ -32,7 +37,7 @@ namespace StaffManagement
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            FrmDepartment frm = new FrmDepartment();
+            FrmEmployee frm = new FrmEmployee();
             this.Hide();
             frm.ShowDialog();
             this.Visible = true;

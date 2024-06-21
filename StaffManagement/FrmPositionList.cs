@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace StaffManagement
 {
-    public partial class FrmDepartmentList : Form
+    public partial class FrmPositionList : Form
     {
-        public FrmDepartmentList()
+        public FrmPositionList()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace StaffManagement
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            FrmDepartment frm = new FrmDepartment();
+            FrmPosition frm = new FrmPosition();
             this.Hide();
             frm.ShowDialog();
             this.Visible = true;
@@ -32,7 +32,7 @@ namespace StaffManagement
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            FrmDepartment frm = new FrmDepartment();
+            FrmPosition frm = new FrmPosition();
             this.Hide();
             frm.ShowDialog();
             this.Visible = true;
